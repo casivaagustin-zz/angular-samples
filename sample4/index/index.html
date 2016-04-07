@@ -1,0 +1,12 @@
+<div ng-controller="indexCtrl">
+	 <h1>List of itemsss</h1>
+	 <ul>
+		 <li ng-show="!items.length">No items, add some</li>
+		 <li ng-repeat="item in items">
+			 <input ng-model="item.name"> - <span ng-click="remove(item)">Remove</span>
+			</li>
+	 </ul>
+	 <span ng-click="add()">Add Item</span> 
+	 <span ng-click="show()">Show</span>
+	 <a href="#/detail">Detail</a>
+</div>	
